@@ -9,7 +9,7 @@ except ImportError:
 
 setup(
     name='watchsubs',
-    version='0.1',
+    version='0.2',
     packages=['watchsubs'],
     description='Joint magic from watchdog and subliminal',
     author='Enrique',
@@ -42,9 +42,8 @@ try:
            "Unless you've used a different location," +
            "make sure to include that directory into your PATH\n" +
            "***\n") % get_bin_path())
-
     print("To permanently watch a directory for movies, add the following" +
-          "line to your crontab file:\n   @reboot watchsubs --path PATH\n")
+          " line to your crontab file:\n  @reboot watchsubs --path PATH\n")
 
 except ImportError:
     pass

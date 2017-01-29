@@ -73,3 +73,4 @@ def main():
     except KeyboardInterrupt:
         observer.stop()
     observer.join()
+    return
